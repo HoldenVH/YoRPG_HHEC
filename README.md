@@ -1,2 +1,2 @@
 # YoRPG_HHEC
-ye old RPG
+A text based RPG in java
