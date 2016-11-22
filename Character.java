@@ -1,6 +1,6 @@
 // Team HHEC - Eric Chen, Holden Higgins
 // APCS1 pd3
-// HW32 -- Ye Olde Role Playing Game, Expanded
+// HW34 -- Ye Olde Role Playing Game, Unchained
 // 2016-11-21
 
 public abstract class Character {
@@ -45,22 +45,22 @@ public abstract class Character {
     }
     
     //prepare for a special attack
-    public void specialize() {
-	if(normal){
+    public abstract void specialize();
+/*	if(normal){
 	    attack*=2;
 	    defense/=2;
 	    normal=false;
 	}
-    }
+    }*/
 
     //revert to normal mode
-    public void normalize() {
-	if(!normal){
+    public abstract void normalize();
+/*	if(!normal){
 	    attack/=2;
 	    defense*=2;
 	    normal=true;
 	}
-    }
+    }*/
     
     public abstract String about();
 
