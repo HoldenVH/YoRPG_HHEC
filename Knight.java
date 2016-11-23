@@ -31,4 +31,19 @@ public class Knight extends Character{
     public String about(){
 	return "Knight: An armored fighter with high defense and low attack\n";
     }
+    public abstract void specialize();
+	if(normal){
+	    attack*=2;
+	    defense/=2;
+	    normal=false;
+	}
+    }*/
+
+    //revert to normal mode
+    public abstract void normalize();
+ 	if(!normal){
+	    attack/=2;
+	    defense*=2;
+	    normal=true;
+	}
 }
