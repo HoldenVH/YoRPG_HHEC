@@ -47,5 +47,5 @@ public class Elf extends Character{
 	    defense*=2;
 	    normal=true;
 	}
-}
+    }
 }
