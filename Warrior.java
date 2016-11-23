@@ -38,5 +38,21 @@ public class Warrior extends Character
     public String about(){
 	return "Warrior: A Brawny brawler for any fight\n";
     }
+    public abstract void specialize();
+	if(normal){
+	    attack*=2;
+	    defense/=2;
+	    normal=false;
+	}
+    }
+
+    //revert to normal mode
+    public abstract void normalize();
+ 	if(!normal){
+	    attack/=2;
+	    defense*=2;
+	    normal=true;
+	}
+    }
     
 }//end class Warrior
