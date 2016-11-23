@@ -46,4 +46,5 @@ public class Knight extends Character{
 	    defense*=2;
 	    normal=true;
 	}
+    }
 }
