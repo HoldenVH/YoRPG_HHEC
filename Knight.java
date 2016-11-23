@@ -37,7 +37,7 @@ public class Knight extends Character{
 	    defense/=2;
 	    normal=false;
 	}
-    }*/
+    }
 
     //revert to normal mode
     public abstract void normalize();
