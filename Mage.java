@@ -32,5 +32,20 @@ public class Mage extends Character{
     public String about(){
 	return "Mage:An ancient magician who will sometimes cast poweful spells for massive damage\n";
     }
+    public abstract void specialize();
+	if(normal){
+	    attack*=2;
+	    defense/=2;
+	    normal=false;
+	}
+    }*/
+
+    //revert to normal mode
+    public abstract void normalize();
+ 	if(!normal){
+	    attack/=2;
+	    defense*=2;
+	    normal=true;
+	}
 
 }
