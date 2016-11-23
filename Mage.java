@@ -38,7 +38,7 @@ public class Mage extends Character{
 	    defense/=2;
 	    normal=false;
 	}
-    }*/
+    }
 
     //revert to normal mode
     public abstract void normalize();
@@ -47,5 +47,5 @@ public class Mage extends Character{
 	    defense*=2;
 	    normal=true;
 	}
-
+    }
 }
