@@ -27,4 +27,20 @@ public class Monster extends Character
     public String about(){
 	return "Monster:The cruel creature in the night, a scourge on all things good\n";
     }
+    public abstract void specialize();
+	if(normal){
+	    attack*=2;
+	    defense/=2;
+	    normal=false;
+	}
+    }
+
+    //revert to normal mode
+    public abstract void normalize();
+ 	if(!normal){
+	    attack/=2;
+	    defense*=2;
+	    normal=true;
+	}
+   }
 }//end class Monster
