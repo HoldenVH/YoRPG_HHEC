@@ -32,7 +32,7 @@ public class Rogue extends Character{
     public String about(){
 	return "Rogue:A stealthy scout, sometimes blows will entirely miss him\n";
     }
-    public abstract void specialize();
+    public void specialize(){
 	if(normal){
 	    attack*=2;
 	    defense/=2;
@@ -41,7 +41,7 @@ public class Rogue extends Character{
     }
 
     //revert to normal mode
-    public abstract void normalize();
+    public void normalize(){
  	if(!normal){
 	    attack/=2;
 	    defense*=2;

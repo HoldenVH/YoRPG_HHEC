@@ -32,7 +32,7 @@ public class Elf extends Character{
     public String about(){
 	return "Elf: A forest warrior with high attack and low defense\n";
     }
-    public abstract void specialize();
+    public void specialize(){
 	if(normal){
 	    attack*=2;
 	    defense/=2;
@@ -41,7 +41,7 @@ public class Elf extends Character{
     }
 
     //revert to normal mode
-    public abstract void normalize();
+    public void normalize(){
  	if(!normal){
 	    attack/=2;
 	    defense*=2;

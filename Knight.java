@@ -31,7 +31,7 @@ public class Knight extends Character{
     public String about(){
 	return "Knight: An armored fighter with high defense and low attack\n";
     }
-    public abstract void specialize();
+    public void specialize(){
 	if(normal){
 	    attack*=2;
 	    defense/=2;
@@ -40,7 +40,7 @@ public class Knight extends Character{
     }
 
     //revert to normal mode
-    public abstract void normalize();
+    public void normalize(){
  	if(!normal){
 	    attack/=2;
 	    defense*=2;

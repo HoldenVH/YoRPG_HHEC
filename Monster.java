@@ -27,7 +27,7 @@ public class Monster extends Character
     public String about(){
 	return "Monster:The cruel creature in the night, a scourge on all things good\n";
     }
-    public abstract void specialize();
+    public void specialize(){
 	if(normal){
 	    attack*=2;
 	    defense/=2;
@@ -36,7 +36,7 @@ public class Monster extends Character
     }
 
     //revert to normal mode
-    public abstract void normalize();
+    public void normalize(){
  	if(!normal){
 	    attack/=2;
 	    defense*=2;
