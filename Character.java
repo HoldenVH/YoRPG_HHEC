@@ -38,6 +38,8 @@ public abstract class Character {
 	if(Math.random()<c.getEvade()){
 	    dmg=0;
 	}
+	//gives some randomization
+	dmg+=(int)((Math.random()*10)-5);
 	dmg-= c.getDefense();
 	if ( dmg < 0 ){dmg = 0;};
 	c.lowerHP( dmg );
