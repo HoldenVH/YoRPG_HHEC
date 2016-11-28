@@ -6,7 +6,12 @@ A text based RPG in java
 =======================================
 
  * There are 5 classes to choose from.
- * More to come as development progresses.
+	-Mage: sometimes casts spell and does 4x damage
+	-Rogue: sometimes dodges enemy attacks entirely
+	-Warrior: base fighter in the game
+	-Knight: Heavy armor unit with low attack
+	-Elf: Quick, high damage, low defense unit
+* When you attack, there is a +/- 5 dmg point variation
 
 
 =======================================
